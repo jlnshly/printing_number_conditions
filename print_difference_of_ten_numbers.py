@@ -1,10 +1,8 @@
 #Set the range for 10 automatic input function
 #Assign Variables
-for i in range (1, 11):
-    user_input = float(input("Enter number {}: ".format(i)))
-    if user_input in range(2, 11):
-        user_input -= user_input
-print(user_input)
-
-
 #Set the conditions
+first_number = float(input("Enter a number: "))
+for i in range (9):
+    remaining_numbers = float(input("Enter a number: "))
+    first_number -= remaining_numbers
+print(first_number)
